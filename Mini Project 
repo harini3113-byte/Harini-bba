@@ -1,0 +1,73 @@
+# ✈️ Flight Timings and Name App
+
+items = [
+    "1. IndiGo",
+    "2. Air India",
+    "3. Vistara",
+    "4. SpiceJet",
+    "5. Akasa Air",
+    "6. Flight Status",
+    "7. Exit 🙏"
+]
+
+import random as r
+
+def indigo():
+    print("✈️ Welcome to IndiGo")
+    print("Flight Name : IndiGo 6E-203")
+    print("Departure   : 06:30 AM")
+    print("Arrival     : 08:45 AM")
+
+def airindia():
+    print("✈️ Welcome to Air India")
+    print("Flight Name : Air India AI-540")
+    print("Departure   : 09:15 AM")
+    print("Arrival     : 11:50 AM")
+
+def vistara():
+    print("✈️ Welcome to Vistara")
+    print("Flight Name : Vistara UK-822")
+    print("Departure   : 12:45 PM")
+    print("Arrival     : 03:10 PM")
+
+def spicejet():
+    print("✈️ Welcome to SpiceJet")
+    print("Flight Name : SpiceJet SG-301")
+    print("Departure   : 04:20 PM")
+    print("Arrival     : 06:30 PM")
+
+def akasa():
+    print("✈️ Welcome to Akasa Air")
+    print("Flight Name : Akasa QP-712")
+    print("Departure   : 08:10 PM")
+    print("Arrival     : 10:25 PM")
+
+def flight_status():
+    status = ["ON TIME ✅", "DELAYED ⏳", "CANCELLED ❌"]
+    print("Flight Status:", r.choice(status))
+
+while True:
+    print("\n>>> ✨ Flight Timings & Name App ✨ <<<")
+
+    for i in items:
+        print(i)
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        indigo()
+    elif choice == "2":
+        airindia()
+    elif choice == "3":
+        vistara()
+    elif choice == "4":
+        spicejet()
+    elif choice == "5":
+        akasa()
+    elif choice == "6":
+        flight_status()
+    elif choice == "7":
+        print("Thank you ✈️ Safe Journey!")
+        break
+    else:
+        print("Enter a valid choice 😟")
